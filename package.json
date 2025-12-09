@@ -1,0 +1,23 @@
+{
+  "name": "schoolwebsite",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "dev": "npx parcel src/index.html",
+    "build": "parcel build src/index.html --public-url /schoolwebsite/",
+    "predeploy": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Rostyslav-afk/schoolwebsite.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Rostyslav-afk/schoolwebsite/issues"
+  },
+  "homepage": "https://github.com/Rostyslav-afk/schoolwebsite#readme",
+  "devDependencies": {
+    "parcel": "^2.16.3"
+  }
+}
