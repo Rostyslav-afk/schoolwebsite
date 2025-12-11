@@ -1,8 +1,12 @@
 :root {
   --header-bg: #262626;
+  --hero-bg: #f4f4f4;
+
   --nunito: "Nunito";
   --noto-sans: "Noto Sans";
+
   --white-color: #fff;
+  --black-color: #000;
   --hover-color: #e1712b;
 }
 
@@ -211,17 +215,84 @@ table {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  font-family: var(--noto-sans);
 }
 
 .hero-title {
   font-size: 70px;
-  font-weight: 600;
+  font-weight: 500;
   text-align: center;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
-.hero-subtitle{
+.hero-subtitle {
   font-size: 20px;
+}
+
+/* INTRO */
+
+.intro {
+  padding-top: 40px;
+  padding-bottom: 110px;
+  background-color: var(--hero-bg);
+  color: var(--black-color);
+  font-family: var(--noto-sans);
+  font-weight: 500;
+  text-align: center;
+}
+
+.intro-title {
+  font-size: 40px;
+  margin-bottom: 40px;
+}
+
+.intro-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 35px;
+}
+
+.intro-card {
+  background-color: var(--white-color);
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 30px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-right: 10px;
+  padding-left: 10px;
+  width: 800px;
+  border-radius: 7px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+    rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  transition: transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.intro-card:hover{
+  transform: scale(1.05);
+}
+
+.icard-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 20px;
+}
+
+.icard-box {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.icard-subtitle {
+  gap: 0;
+  margin-bottom: 20px;
+  color: #155dfc;
 }
 
 /* FOOTER */
