@@ -168,7 +168,7 @@ table {
   content: "";
   position: absolute;
   left: 50%;
-  bottom: -5px; 
+  bottom: -5px;
   width: 0;
   height: 2px;
   background-color: var(--hover-color);
@@ -182,4 +182,20 @@ table {
 .header-link:hover::after {
   width: 100%;
   left: 0;
+}
+
+/* FOOTER */
+
+.footer {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  background-color: var(--header-bg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--text-color);
+  position: fixed;
 }
