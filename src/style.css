@@ -1,6 +1,7 @@
 :root {
   --header-bg: #262626;
   --hero-bg: #f4f4f4;
+  --blue-color: #155dfc;
 
   --nunito: "Nunito";
   --noto-sans: "Noto Sans";
@@ -271,7 +272,7 @@ table {
   transition: transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
-.intro-card:hover{
+.intro-card:hover {
   transform: scale(1.05);
 }
 
@@ -291,7 +292,7 @@ table {
 
 .icard-subtitle {
   margin-bottom: 20px;
-  color: #155dfc;
+  color: var(--blue-color);
 }
 
 /* FOOTER */
@@ -307,4 +308,61 @@ table {
   justify-content: center;
   align-items: center;
   position: fixed;
+}
+
+/* DESTINATION */
+
+.destination {
+  padding-top: 35px;
+  padding-bottom: 95px;
+  text-align: center;
+  color: var(--black-color);
+  background-color: var(--hero-bg);
+}
+
+.destination-title {
+  font-size: 45px;
+  font-family: var(--noto-sans);
+  font-weight: 600;
+  margin-bottom: 35px;
+}
+
+.destination-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 35px;
+}
+
+.ditem {
+  width: 500px;
+  height: 400px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border-radius: 7px;
+  background-color: var(--white-color);
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  transition-property: transform box-shadow;
+  transition-duration: 0.3s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.ditem:hover {
+  transform: scale(1.05);
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+.ditem-image{
+  width: 450px;
+  border-radius: 7px;
+}
+
+.ditem-title{
+  color: var(--blue-color);
+  font-size: 25px;
 }
