@@ -25,10 +25,32 @@
                 <a href="./contacts.html" class="header-link">Контакти</a>
             </nav>
         </header>
-
+        <main class="main">
+            <section class="contacts">
+                <h1 class="contacts-title">Контакти</h1>
+                <form action class="contacts-form">
+                    <input type="text" placeholder="Ім'я" class="contacts-input"
+                        required>
+                    <input type="email" placeholder="Електрона пошта"
+                        class="contacts-input" required>
+                    <textarea name id="contacts-textarea"
+                        placeholder="Повідомлення"></textarea>
+                    <button type="submit"
+                        class="contacts-button">Відправити!</button>
+                </form>
+                <div id="thankModal" class="modal">
+                    <div class="modal-content">
+                        <span id="closeModal" class="close">&times;</span>
+                        <h2>Дякуємо за повідомлення!</h2>
+                        <p>Ми зв’яжемося з вами найближчим часом.</p>
+                    </div>
+                </div>
+            </section>
+        </main>
         <footer class="footer">
             <h1 class="footer-title">&#169; 2025 Подорожі. Автор: Скрипин Р.В.
                 Всі права захищено.</h1>
         </footer>
+        <script type="module" src="../app.js"></script>
     </body>
 </html>

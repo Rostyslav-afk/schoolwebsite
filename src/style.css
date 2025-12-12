@@ -2,6 +2,9 @@
   --header-bg: #262626;
   --hero-bg: #f4f4f4;
   --blue-color: #155dfc;
+  --input-color: #f5f5f5;
+  --input-tcolor: #242424;
+  --bluew-color: #5b5fc7;
 
   --nunito: "Nunito";
   --noto-sans: "Noto Sans";
@@ -357,12 +360,173 @@ table {
   box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 }
 
-.ditem-image{
+.ditem-image {
   width: 450px;
   border-radius: 7px;
 }
 
-.ditem-title{
+.ditem-title {
   color: var(--blue-color);
   font-size: 25px;
+}
+
+/* CONTACTS */
+
+.contacts {
+  padding-top: 35px;
+  padding-bottom: 65px;
+  color: var(--black-color);
+  background-color: var(--hero-bg);
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.contacts-title {
+  font-family: var(--noto-sans);
+  font-size: 35px;
+  font-weight: 600;
+}
+
+.contacts-form {
+  height: 350px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 25px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  width: 350px;
+  background-color: var(--white-color);
+  border-radius: 7px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.contacts-input {
+  max-width: 190px;
+  background-color: var(--input-color);
+  color: var(--input-tcolor);
+  padding: 0.15rem 0.5rem;
+  min-height: 40px;
+  border-radius: 4px;
+  outline: none;
+  border: none;
+  line-height: 1.15;
+  box-shadow: 0px 10px 20px -18px;
+}
+
+.contacts-input:focus {
+  border-bottom: 2px solid var(--bluew-color);
+  border-radius: 4px 4px 2px 2px;
+}
+
+.contacts-input:hover {
+  outline: 1px solid lightgrey;
+}
+
+#contacts-textarea {
+  background-color: var(--input-color);
+  color: var(--input-tcolor);
+  padding: 0.15rem 0.5rem;
+  border-radius: 4px;
+  outline: none;
+  border: none;
+  line-height: 1.15;
+  box-shadow: 0px 10px 20px -18px;
+  min-height: 100px;
+  min-width: 50px;
+}
+
+#contacts-textarea:focus {
+  border-bottom: 2px solid var(--bluew-color);
+  border-radius: 4px 4px 2px 2px;
+}
+
+#contacts-textarea:hover {
+  outline: 1px solid lightgrey;
+}
+
+.contacts-button {
+  --clr-font-main: hsla(0 0% 20% / 100);
+  --btn-bg-1: hsla(194 100% 69% / 1);
+  --btn-bg-2: hsla(217 100% 56% / 1);
+  --btn-bg-color: hsla(360 100% 100% / 1);
+  --radii: 0.5em;
+  cursor: pointer;
+  padding: 0.9em 1.4em;
+  min-width: 120px;
+  min-height: 44px;
+  font-size: var(--size, 1rem);
+  font-weight: 500;
+  transition: 0.8s;
+  background-size: 280% auto;
+  background-image: linear-gradient(
+    325deg,
+    var(--btn-bg-2) 0%,
+    var(--btn-bg-1) 55%,
+    var(--btn-bg-2) 90%
+  );
+  border: none;
+  border-radius: var(--radii);
+  color: var(--btn-bg-color);
+  box-shadow: 0px 0px 20px rgba(71, 184, 255, 0.5),
+    0px 5px 5px -1px rgba(58, 125, 233, 0.25),
+    inset 4px 4px 8px rgba(175, 230, 255, 0.5),
+    inset -4px -4px 8px rgba(19, 95, 216, 0.35);
+}
+
+.contacts-button:hover {
+  background-position: right top;
+}
+
+.contacts-button:is(:focus, :focus-visible, :active) {
+  outline: none;
+  box-shadow: 0 0 0 3px var(--btn-bg-color), 0 0 0 6px var(--btn-bg-2);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .contacts-button {
+    transition: linear;
+  }
+}
+
+.modal {
+  display: none;
+  transition: display 0.5s cubic-bezier(.17,.67,.83,.67);
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #fff;
+  padding: 40px 45px;
+  border-radius: 20px;
+  text-align: center;
+  width: 420px;
+  max-width: 90%;
+  box-shadow: 0 12px 35px rgba(0,0,0,0.25);
+  font-size: 18px;    
+}
+
+.modal-content h2{
+  margin-bottom: 15px;
+}
+
+.close {
+  float: right;
+  font-size: 24px;
+  cursor: pointer;
 }
