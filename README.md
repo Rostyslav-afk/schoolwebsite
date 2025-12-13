@@ -1,2 +1,2 @@
-Як зайти на сайт локально? Перед цим вам треба встановити node.js
-Зайдіть в термінал та напишіть npm i після встановлення напишіть npm run build. Щоб зайти на сайт npm run dev і клікайте на посилання.
+How to access the site locally? Before that you need to install node.js
+Go to the terminal and type npm i and after installation type npm run build. To access the site npm run dev and click on the link.
